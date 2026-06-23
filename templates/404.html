@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Página não encontrada{% endblock %}
+
+{% block conteudo %}
+<section class="card">
+    <h2>Página não encontrada</h2>
+    <p>O currículo solicitado não existe.</p>
+    <a class="botao" href="{{ url_for('listar') }}">Voltar</a>
+</section>
+{% endblock %}
