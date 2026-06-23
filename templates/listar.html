@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block titulo %}Listagem de Currículos{% endblock %} {% block conteudo %}
+Currículos cadastrados
+{% if curriculos %} {% for curriculo in curriculos %} {% endfor %}
+Nome	E-mail	Ação
+{{ curriculo.nome }}	{{ curriculo.email }}	Consultar
+{% else %}
+Nenhum currículo cadastrado ainda.
+
+{% endif %}
+{% endblock %}
