@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Consultar Currículo{% endblock %}
+
+{% block conteudo %}
+<section class="card">
+    <h2>Consulta do currículo</h2>
+
+    <p><strong>Nome:</strong> {{ curriculo.nome }}</p>
+    <p><strong>Telefone:</strong> {{ curriculo.telefone if curriculo.telefone else 'Não informado' }}</p>
+    <p><strong>E-mail:</strong> {{ curriculo.email }}</p>
+    <p><strong>Endereço WEB:</strong>
+        {% if curriculo.endereco_web %}
+            <a href="{{ curriculo.endereco_web }}" rel="noopener noreferrer">{{ curriculo.endereco_web }}</a>
+        {% else %}
+            Não informado
+        {% endif %}
+    </p>
+    <p><strong>Experiência profissional:</strong></p>
+    <div class="texto-experiencia">{{ curriculo.experiencia }}</div>
+
+    <a class="botao" href="{{ url_for('listar') }}">Voltar</a>
+</section>
+{% endblock %}

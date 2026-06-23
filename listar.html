@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Listagem de Currículos{% endblock %}
+
+{% block conteudo %}
+<section class="card">
+    <h2>Currículos cadastrados</h2>
+
+    {% if curriculos %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for curriculo in curriculos %}
+                <tr>
+                    <td>{{ curriculo.nome }}</td>
+                    <td>{{ curriculo.email }}</td>
+                    <td><a class="botao" href="{{ url_for('consultar', id=curriculo.id) }}">Consultar</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>Nenhum currículo cadastrado ainda.</p>
+    {% endif %}
+</section>
+{% endblock %}

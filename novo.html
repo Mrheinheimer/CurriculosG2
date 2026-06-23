@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Cadastrar Currículo{% endblock %}
+
+{% block conteudo %}
+<section class="card">
+    <h2>Cadastrar novo currículo</h2>
+
+    <form method="post" autocomplete="off">
+        <label for="nome">Nome da pessoa *</label>
+        <input type="text" id="nome" name="nome" maxlength="100" required value="{{ dados.get('nome', '') }}">
+
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone" maxlength="30" value="{{ dados.get('telefone', '') }}">
+
+        <label for="email">Endereço de e-mail *</label>
+        <input type="email" id="email" name="email" maxlength="120" required value="{{ dados.get('email', '') }}">
+
+        <label for="endereco_web">Endereço WEB</label>
+        <input type="url" id="endereco_web" name="endereco_web" maxlength="200" placeholder="https://exemplo.com" value="{{ dados.get('endereco_web', '') }}">
+
+        <label for="experiencia">Experiência profissional *</label>
+        <textarea id="experiencia" name="experiencia" rows="6" required>{{ dados.get('experiencia', '') }}</textarea>
+
+        <button type="submit">Salvar currículo</button>
+    </form>
+</section>
+{% endblock %}
