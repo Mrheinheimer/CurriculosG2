@@ -34,8 +34,8 @@ nav a:hover {
 
 main {
     max-width: 950px;
-    margin: 30px auto;
-    padding: 0 16px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 .card {
@@ -145,4 +145,11 @@ textarea {
     border-left: 4px solid #5865f2;
     padding: 12px;
     border-radius: 8px;
+}
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 24px;
+    color: #b5bac1;
+    border-top: 1px solid #3f4147;
 }
