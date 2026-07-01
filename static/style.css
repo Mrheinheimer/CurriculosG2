@@ -5,151 +5,150 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #313338;
-    color: #dbdee1;
+    background: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #1e1f22;
-    padding: 22px;
+    background: #ffffff;
+    padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #232428;
+    border-bottom: 1px solid #ccc;
 }
 
 header h1 {
-    margin: 0 0 12px;
-    color: #ffffff;
+    margin: 0 0 10px;
+    color: #222;
 }
 
 nav a {
-    color: #b5bac1;
+    color: #333;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #ffffff;
+    text-decoration: underline;
 }
 
 main {
-    max-width: 950px;
-    margin: 40px auto;
+    max-width: 900px;
+    margin: 30px auto;
     padding: 0 20px;
 }
 
 .card {
-    background: #2b2d31;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-    border: 1px solid #1e1f22;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
 }
 
 h2 {
-    color: #ffffff;
+    color: #222;
     margin-top: 0;
 }
 
 .botao,
 button {
-    background: #5865f2;
+    background: #333;
     color: white;
     border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
+    padding: 10px 14px;
+    border-radius: 4px;
     text-decoration: none;
-    font-weight: bold;
     cursor: pointer;
     display: inline-block;
 }
 
 .botao:hover,
 button:hover {
-    background: #4752c4;
+    background: #555;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 18px;
-    overflow: hidden;
-    border-radius: 10px;
+    margin-top: 15px;
 }
 
 th {
-    background: #1e1f22;
-    color: #ffffff;
+    background: #e0e0e0;
+    color: #222;
     text-align: left;
-    padding: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 td {
-    padding: 14px;
-    border-bottom: 1px solid #3f4147;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 tr:hover {
-    background: #35373c;
+    background: #f0f0f0;
 }
 
 a {
-    color: #00a8fc;
+    color: #333;
 }
 
 label {
     display: block;
-    margin-top: 14px;
-    margin-bottom: 6px;
+    margin-top: 12px;
+    margin-bottom: 5px;
     font-weight: bold;
-    color: #ffffff;
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 12px;
-    background: #1e1f22;
-    color: #dbdee1;
-    border: 1px solid #3f4147;
-    border-radius: 8px;
-    outline: none;
+    padding: 10px;
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 input:focus,
 textarea:focus {
-    border-color: #5865f2;
+    border-color: #333;
+    outline: none;
 }
 
 textarea {
-    min-height: 120px;
+    min-height: 100px;
     resize: vertical;
 }
 
+.sucesso,
+.erro,
+.info {
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
 .sucesso {
-    background: #248046;
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
+    background: #e6f4ea;
+    border: 1px solid #8bc48a;
 }
 
 .erro {
-    background: #da373c;
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
+    background: #fbeaea;
+    border: 1px solid #d88;
 }
 
 .info {
-    background: #232428;
-    border-left: 4px solid #5865f2;
-    padding: 12px;
-    border-radius: 8px;
+    background: #eeeeee;
+    border: 1px solid #ccc;
 }
+
 footer {
     text-align: center;
-    margin-top: 60px;
-    padding: 24px;
-    color: #b5bac1;
-    border-top: 1px solid #3f4147;
+    margin-top: 50px;
+    padding: 20px;
+    color: #555;
+    border-top: 1px solid #ccc;
 }
